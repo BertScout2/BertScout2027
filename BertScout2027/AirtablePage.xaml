@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BertScout2027.AirtablePage"
+    xmlns:local="clr-namespace:BertScout2027"
+    x:DataType="local:GlobalViewModel"
+    Title="AirtablePage"
+    >
+
+    <VerticalStackLayout
+        >
+
+        <Label 
+            x:Name="AirtableLabel"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            Text="Send data to Airtable!" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+
+        <Button 
+            x:Name="AirtableSend"
+            Text="Send"
+            Margin="0,20,0,20"
+            WidthRequest="100"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Clicked="AirtableSend_Clicked"
+            />
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            >
+
+            <Label
+                Text="Number of records uploaded:"
+                Margin="0,0,0,0"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+            <Label
+                x:Name="AirtableCountLabel"
+                Margin="10,0,0,0"
+                Text="{Binding AirtableUploadCount}"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+            <Label
+                x:Name="AirtableDoneLabel"
+                Text=""
+                Margin="10,0,0,0"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+        </HorizontalStackLayout>
+
+        <Label
+            x:Name="ErrorLabel"
+            IsVisible="False"
+            TextColor="Red"
+            Text=""
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+
+    </VerticalStackLayout>
+
+</ContentPage>

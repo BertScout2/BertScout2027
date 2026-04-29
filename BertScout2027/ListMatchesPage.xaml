@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BertScout2027.ListMatchesPage"
+    xmlns:local="clr-namespace:BertScout2027"
+    xmlns:models="clr-namespace:BertScout2027.Models"
+    x:DataType="local:GlobalViewModel"
+    Title="List Matches">
+
+    <CollectionView
+        ItemsSource="{Binding MatchSummaries}"
+        ItemsLayout="VerticalGrid"
+        >
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:MatchSummary">
+                <Grid
+                    >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="55"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="105"/>
+                        <!--<ColumnDefinition Width="100"/>-->
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        Text="Match:"
+                        />
+                    <Label
+                        Grid.Column="1"
+                        Text="{Binding MatchNumber}"
+                        />
+                    <Label
+                        Grid.Column="2"
+                        Text="Team:"
+                        />
+                    <Label
+                        Grid.Column="3"
+                        Text="{Binding TeamNumber}"
+                        />
+                    <Label
+                        Grid.Column="4"
+                        Text="Scout:"
+                        />
+                    <Label
+                        Grid.Column="5"
+                        Text="{Binding ScoutName}"
+                        />
+                    <Label
+                        Grid.Column="6"
+                        Text="{Binding Uploaded}"
+                        />
+                    <!--<Button
+                        Grid.Column="7"
+                        Text="Go to match"
+                        Clicked="GoToMatchClicked"
+                        />-->
+                </Grid>
+            </DataTemplate>
+
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
+
+</ContentPage>

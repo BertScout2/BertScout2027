@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BertScout2027"
+    x:Class="BertScout2027.LoginPage"
+    x:DataType="local:GlobalViewModel"
+    Title="Login">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        >
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <Label 
+            Text="Scouter Name:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+
+            <Entry
+                x:Name="ScouterName"
+                Text="{Binding ScouterName}"
+                WidthRequest="100"
+                MaxLength="20"
+                />
+
+            <Button
+                x:Name="SaveButton"
+                Text="Login"
+                Margin="10,0,0,0"
+                Clicked="SaveButton_Clicked"
+                />
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Margin="0,20,0,0"
+            >
+
+            <Button
+                x:Name="ClearButton"
+                Text="Logout"
+                Clicked="ClearButton_Clicked"
+                />
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <Label
+                x:Name="Message"
+                Text=""
+                />
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>

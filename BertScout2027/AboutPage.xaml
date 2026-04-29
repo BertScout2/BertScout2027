@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:DataType="ContentPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BertScout2027.AboutPage"
+    Title="About"
+    >
+    
+    <VerticalStackLayout>
+        
+        <Label 
+            Text="About!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+        
+        <Label 
+            Text="This is a program for scouting in the stands during robotics events."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+
+        <Label
+            Text="Version 2027.03.24"
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+
+        <Label
+            Text="Written by Ian, Evan, Thomas, Patrick, and Scott"
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+
+    </VerticalStackLayout>
+    
+</ContentPage>

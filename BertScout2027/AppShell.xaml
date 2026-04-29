@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:DataType="Shell"
+    x:Class="BertScout2027.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BertScout2027"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Bert Scout 2027">
+
+    <FlyoutItem Title="Login">
+        <Tab>
+            <ShellContent
+                Title="Login"
+                ContentTemplate="{DataTemplate local:LoginPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Stand Scouting">
+        <Tab>
+            <ShellContent
+                Title="Stand Scouting"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
+    <!--<FlyoutItem Title="Match Schedule">
+        <Tab>
+            <ShellContent
+                Title="Match Schedule"
+                ContentTemplate="{DataTemplate local:MatchSchedulePage}"
+                />
+        </Tab>    
+    </FlyoutItem>-->
+
+    <FlyoutItem Title="List Matches">
+        <Tab>
+            <ShellContent
+                Title="List Matches"
+                ContentTemplate="{DataTemplate local:ListMatchesPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Airtable">
+        <Tab>
+            <ShellContent
+                Title="Airtable"
+                ContentTemplate="{DataTemplate local:AirtablePage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About">
+        <Tab>
+            <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate local:AboutPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
