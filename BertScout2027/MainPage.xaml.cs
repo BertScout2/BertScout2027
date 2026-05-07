@@ -104,24 +104,24 @@ namespace BertScout2027
 
         private void ClearFields()
         {
-            SetAutoNumberOfCycles(0);
-            SetAutoShootingSpeed(0);
-            SetAutoBallsPerCycle(0);
-            SetAutoAccuracy(0);
-            SetAutoRobotSpeed(0);
+            //SetAutoNumberOfCycles(0);
+            //SetAutoShootingSpeed(0);
+            //SetAutoBallsPerCycle(0);
+            //SetAutoAccuracy(0);
+            //SetAutoRobotSpeed(0);
             //SetAutoFloorPickup(false);
             //SetAutoOutpostPickup(false);
             //SetAutoRoute(0);
-            SetAutoClimbingLevel(0);
-            SetTeleNumberOfCycles(0);
-            SetTeleShootingSpeed(0);
-            SetTeleBallsPerCycle(0);
-            SetTeleAccuracy(0);
-            SetTeleRobotSpeed(0);
+            //SetAutoClimbingLevel(0);
+            //SetTeleNumberOfCycles(0);
+            //SetTeleShootingSpeed(0);
+            //SetTeleBallsPerCycle(0);
+            //SetTeleAccuracy(0);
+            //SetTeleRobotSpeed(0);
             //SetTeleFloorPickup(false);
             //SetTeleOutpostPickup(false);
             //SetTeleRoute(0);
-            SetTeleClimbingLevel(0);
+            //SetTeleClimbingLevel(0);
             SetScoreStar(0);
             SetDefenseScoreStar(0);
             SetComments("");
@@ -129,24 +129,24 @@ namespace BertScout2027
 
         private void FillFields()
         {
-            SetAutoNumberOfCycles(match.AutoNumberOfCycles);
-            SetAutoShootingSpeed(match.AutoShootingSpeed);
-            SetAutoBallsPerCycle(match.AutoBallsPerCycle);
-            SetAutoAccuracy(match.AutoAccuracy);
-            SetAutoRobotSpeed(match.AutoRobotSpeed);
+            //SetAutoNumberOfCycles(match.AutoNumberOfCycles);
+            //SetAutoShootingSpeed(match.AutoShootingSpeed);
+            //SetAutoBallsPerCycle(match.AutoBallsPerCycle);
+            //SetAutoAccuracy(match.AutoAccuracy);
+            //SetAutoRobotSpeed(match.AutoRobotSpeed);
             //SetAutoFloorPickup(match.AutoFloorPickup);
             //SetAutoOutpostPickup(match.AutoOutpostPickup);
             //SetAutoRoute(match.AutoRoute);
-            SetAutoClimbingLevel(match.AutoClimbingLevel);
-            SetTeleNumberOfCycles(match.TeleNumberOfCycles);
-            SetTeleShootingSpeed(match.TeleShootingSpeed);
-            SetTeleBallsPerCycle(match.TeleBallsPerCycle);
-            SetTeleAccuracy(match.TeleAccuracy);
-            SetTeleRobotSpeed(match.TeleRobotSpeed);
+            //SetAutoClimbingLevel(match.AutoClimbingLevel);
+            //SetTeleNumberOfCycles(match.TeleNumberOfCycles);
+            //SetTeleShootingSpeed(match.TeleShootingSpeed);
+            //SetTeleBallsPerCycle(match.TeleBallsPerCycle);
+            //SetTeleAccuracy(match.TeleAccuracy);
+            //SetTeleRobotSpeed(match.TeleRobotSpeed);
             //SetTeleFloorPickup(match.TeleFloorPickup);
             //SetTeleOutpostPickup(match.TeleOutpostPickup);
             //SetTeleRoute(match.TeleRoute);
-            SetTeleClimbingLevel(match.TeleClimbingLevel);
+            //SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
             SetDefenseScoreStar(match.DefenseScore);
             SetComments(match.Comments);
@@ -190,6 +190,7 @@ namespace BertScout2027
             EntryTeamNumber.Focus();
         }
 
+        /*
         #region AutoNumberOfCycles
 
         private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
@@ -253,8 +254,8 @@ namespace BertScout2027
         #endregion
 
         #region AutoBallsPerCycle
-
-
+        */
+        /*
         private void AutoBallsPerCycleNone_Clicked(object? sender, EventArgs e)
         {
             SetAutoBallsPerCycle(0);
@@ -289,7 +290,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
 
+        /*
         #region AutoAccuracy
 
         private void AutoAccuracyNone_Clicked(object? sender, EventArgs e)
@@ -326,7 +329,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
 
+        /*
         #region AutoRobotSpeed
 
         private void AutoRobotSpeedNoMovementClicked(object? sender, EventArgs e)
@@ -360,6 +365,7 @@ namespace BertScout2027
         }
 
         #endregion
+        */
 
         /*
         #region AutoFloorPickup
@@ -440,6 +446,7 @@ namespace BertScout2027
         #endregion
         */
 
+        /*
         #region AutoClimbingLevel
 
         private void AutoClimbingNoClimbClicked(object? sender, EventArgs e)
@@ -472,6 +479,9 @@ namespace BertScout2027
         }
 
         #endregion
+                */
+
+        /*
 
         #region TeleNumberOfCycles
 
@@ -496,6 +506,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
+
+        /*
 
         #region TeleShootingSpeed
 
@@ -533,6 +546,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
+
+        /*
 
         #region TeleBallsPerCycle
 
@@ -570,6 +586,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
+
+        /*
 
         #region TeleAccuracy
 
@@ -607,6 +626,9 @@ namespace BertScout2027
         }
 
         #endregion
+        */
+
+        /*
 
         #region TeleRobotSpeed
 
@@ -641,6 +663,7 @@ namespace BertScout2027
         }
 
         #endregion
+*/
 
         /*
         #region TeleFloorPickup
@@ -722,6 +745,7 @@ namespace BertScout2027
         #endregion
         */
 
+        /*
         #region TeleClimbingLevel
 
         private void TeleClimbingNoClimbClicked(object? sender, EventArgs e)
@@ -755,6 +779,7 @@ namespace BertScout2027
         }
 
         #endregion
+        */
 
         #region Comments
 

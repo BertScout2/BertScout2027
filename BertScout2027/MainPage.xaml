@@ -138,7 +138,7 @@
 
                 </Grid>
 
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
@@ -390,7 +390,7 @@
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
 
                 <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
@@ -510,7 +510,7 @@
 
                 </HorizontalStackLayout>-->
 
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
@@ -558,7 +558,7 @@
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
 
                 <Grid
                     BackgroundColor="Green"
@@ -575,7 +575,7 @@
                         />
                 </Grid>
 
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
@@ -827,7 +827,7 @@
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
 
                 <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
@@ -947,7 +947,7 @@
 
                 </HorizontalStackLayout>-->
 
-                <HorizontalStackLayout
+                <!--<HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
@@ -995,7 +995,7 @@
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
 
                 <Grid
                     BackgroundColor="Green"
@@ -1014,8 +1014,8 @@
                 </Grid>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Start"
-                    Margin="0,10,0,0"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,0"
                     >
 
                     <Label
@@ -1083,8 +1083,8 @@
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Start"
-                    Margin="0,10,0,0"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,0"
                     >
 
                     <Label

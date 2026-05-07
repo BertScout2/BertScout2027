@@ -11,12 +11,13 @@ public class MatchSummary
 
     public static MatchSummary FromReader(SqliteDataReader reader)
     {
+        var index = 0;
         var item = new MatchSummary
         {
-            MatchNumber = reader.GetInt32(0),
-            TeamNumber = reader.GetInt32(1),
-            ScoutName = reader.GetString(2),
-            Uploaded = reader.GetString(3),
+            MatchNumber = reader.GetInt32(index++),
+            TeamNumber = reader.GetInt32(index++),
+            ScoutName = reader.GetString(index++),
+            Uploaded = reader.GetString(index++),
         };
         return item;
     }
