@@ -63,10 +63,11 @@ public class BaseModel
 
     public void BaseFromReader(SqliteDataReader reader)
     {
-        Id = reader.GetInt32(0);
-        Uuid = reader.GetString(1);
-        AirtableId = reader.GetString(2);
-        Changed = reader.GetInt32(3) == 1;
+        var index = 0;
+        Id = reader.GetInt32(index++);
+        Uuid = reader.GetString(index++);
+        AirtableId = reader.GetString(index++);
+        Changed = reader.GetInt32(index++) == 1;
     }
 
     public static string SQLInjectionFix(string value)
